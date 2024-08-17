@@ -1,9 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Document</title>
+	<meta charset="UTF-8" />
+	<title>QR Code</title>
 	<style>
+		html {
+			scrollbar-width: none;
+		}
+
 		body {
 			margin: 0;
 			overflow: hidden;
@@ -25,6 +29,7 @@
 			display: block;
 			width: 100%;
 		}
+
 		:root {
 			--in-content-page-color: #15141a;
 			--in-content-page-background: #fff;
@@ -40,7 +45,7 @@
 			--in-content-primary-button-background-hover: #0250bb;
 		}
 
-		@media (prefers-color-scheme: dark){
+		@media (prefers-color-scheme: dark) {
 			:root {
 				--in-content-page-background: #1c1b22;
 				--in-content-page-color: #fbfbfe;
@@ -51,6 +56,7 @@
 				--in-content-primary-button-background-active: #aaf2ff;
 			}
 		}
+
 		input {
 			appearance: none;
 			border: 1px solid var(--in-content-box-border-color);
@@ -103,8 +109,10 @@
 	</style>
 </head>
 <body>
-	<div class="qr_wrapper"><div class="qr"></div></div>
-	<input type="text" placeholder="QR Text"/>
+	<div class="qr_wrapper">
+		<div class="qr"></div>
+	</div>
+	<input type="text" placeholder="QR Text" />
 	<div class="actions">
 		<a download="qr.svg">SVG</a>
 		<a download="qr.png">PNG</a>
