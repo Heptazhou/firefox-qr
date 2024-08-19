@@ -1,0 +1,12 @@
+{
+	"scripts": {
+		"build": "web-ext build -on {name}-v{version}.xpi"
+	},
+	"devDependencies": {
+		"web-ext": "^8.2.0"
+	},
+	"webExt": {
+		"artifactsDir": ".",
+		"sourceDir": "src"
+	}
+}

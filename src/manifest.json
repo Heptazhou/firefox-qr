@@ -1,7 +1,12 @@
 {
 	"manifest_version": 2,
+	"applications": {
+		"gecko": {
+			"id": "qr-code-address-bar@addons.mozilla.org"
+		}
+	},
 	"name": "QR Code",
-	"version": "1.4",
+	"version": "1.5",
 	"description": "Adds a button to the address bar to get the current url as a qr code",
 	"icons": {
 		"48": "icon.svg",
